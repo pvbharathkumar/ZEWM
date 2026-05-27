@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZEX_R_PUTAWAYEXCEPTIONITEM'
+@MappingRole: true
+define role ZEX_R_PUTAWAYEXCEPTIONITEM {
+  grant select on ZEX_R_PUTAWAYEXCEPTIONITEM
+  where TRUE;
+}

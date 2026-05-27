@@ -1,0 +1,43 @@
+unmanaged implementation in class zbp_ex_r_putawayexceptionheade unique;
+strict ( 2 );
+
+define behavior for ZEX_R_PUTAWAYEXCEPTIONHEADER //alias <alias_name>
+//late numbering
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create ( authorization : global );
+  update;
+  delete;
+  field ( readonly ) UUID;
+  association _PutawayExceptionItem { create; }
+}
+
+define behavior for ZEX_R_PUTAWAYEXCEPTIONITEM //alias <alias_name>
+//late numbering
+lock dependent by _PutawayExceptionHeader
+authorization dependent by _PutawayExceptionHeader
+//etag master <field_name>
+{
+  update;
+  delete;
+  field ( readonly ) UUID;
+  field ( readonly ) ParentUUID;
+  association _PutawayExceptionHeader;
+  association _BinReassignmentHistory { create; }
+}
+
+define behavior for ZEX_R_BINREASSIGNMENTHISTORY //alias <alias_name>
+//late numbering
+lock dependent by _PutawayExceptionHeader
+authorization dependent by _PutawayExceptionHeader
+//etag master <field_name>
+{
+  update;
+  delete;
+  field ( readonly ) UUID;
+  field ( readonly ) ParentUUID, RootUUID;
+  association _PutawayExceptionHeader;
+  association _PutawayExceptionItem;
+}

@@ -1,0 +1,257 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'UUID'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'UUID'
+annotate view ZC_EX_R_PUTAWAYEXCEPTIONITEM with
+{
+  @EndUserText.label: 'UUID'
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  }, 
+  {
+    label: ' Items', 
+    id: 'Items', 
+    purpose: #STANDARD, 
+    position: 11 , 
+    type: #LINEITEM_REFERENCE, 
+    targetElement: '_BinReassignmentHistory'
+  } ]
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'UUID'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    label: 'UUID'
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  UUID;
+  
+  @EndUserText.label: 'ParentUUID'
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'ParentUUID'
+  } ]
+  @UI.lineItem: [ {
+    position: 20 , 
+    label: 'ParentUUID'
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  ParentUUID;
+  
+  @EndUserText.label: 'ExceptionID'
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'ExceptionID'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 , 
+    label: 'ExceptionID'
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  ExceptionID;
+  
+  @EndUserText.label: 'ItemNo'
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'ItemNo'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 , 
+    label: 'ItemNo'
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  ItemNo;
+  
+  @EndUserText.label: 'Product'
+  @UI.identification: [ {
+    position: 50 , 
+    label: 'Product'
+  } ]
+  @UI.lineItem: [ {
+    position: 50 , 
+    label: 'Product'
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  Product;
+  
+  @EndUserText.label: 'ProductDesc'
+  @UI.identification: [ {
+    position: 60 , 
+    label: 'ProductDesc'
+  } ]
+  @UI.lineItem: [ {
+    position: 60 , 
+    label: 'ProductDesc'
+  } ]
+  @UI.selectionField: [ {
+    position: 60 
+  } ]
+  ProductDesc;
+  
+  @EndUserText.label: 'Batch'
+  @UI.identification: [ {
+    position: 70 , 
+    label: 'Batch'
+  } ]
+  @UI.lineItem: [ {
+    position: 70 , 
+    label: 'Batch'
+  } ]
+  @UI.selectionField: [ {
+    position: 70 
+  } ]
+  Batch;
+  
+  @EndUserText.label: 'HandlingUnit'
+  @UI.identification: [ {
+    position: 80 , 
+    label: 'HandlingUnit'
+  } ]
+  @UI.lineItem: [ {
+    position: 80 , 
+    label: 'HandlingUnit'
+  } ]
+  @UI.selectionField: [ {
+    position: 80 
+  } ]
+  HandlingUnit;
+  
+  @EndUserText.label: 'SourceBin'
+  @UI.identification: [ {
+    position: 90 , 
+    label: 'SourceBin'
+  } ]
+  @UI.lineItem: [ {
+    position: 90 , 
+    label: 'SourceBin'
+  } ]
+  @UI.selectionField: [ {
+    position: 90 
+  } ]
+  SourceBin;
+  
+  @EndUserText.label: 'TargetBin'
+  @UI.identification: [ {
+    position: 100 , 
+    label: 'TargetBin'
+  } ]
+  @UI.lineItem: [ {
+    position: 100 , 
+    label: 'TargetBin'
+  } ]
+  @UI.selectionField: [ {
+    position: 100 
+  } ]
+  TargetBin;
+  
+  @EndUserText.label: 'ExceptionCode'
+  @UI.identification: [ {
+    position: 110 , 
+    label: 'ExceptionCode'
+  } ]
+  @UI.lineItem: [ {
+    position: 110 , 
+    label: 'ExceptionCode'
+  } ]
+  @UI.selectionField: [ {
+    position: 110 
+  } ]
+  ExceptionCode;
+  
+  @EndUserText.label: 'ExceptionText'
+  @UI.identification: [ {
+    position: 120 , 
+    label: 'ExceptionText'
+  } ]
+  @UI.lineItem: [ {
+    position: 120 , 
+    label: 'ExceptionText'
+  } ]
+  @UI.selectionField: [ {
+    position: 120 
+  } ]
+  ExceptionText;
+  
+  @EndUserText.label: 'Qty'
+  @UI.identification: [ {
+    position: 130 , 
+    label: 'Qty'
+  } ]
+  @UI.lineItem: [ {
+    position: 130 , 
+    label: 'Qty'
+  } ]
+  @UI.selectionField: [ {
+    position: 130 
+  } ]
+  Qty;
+  
+  @EndUserText.label: 'Severity'
+  @UI.identification: [ {
+    position: 140 , 
+    label: 'Severity'
+  } ]
+  @UI.lineItem: [ {
+    position: 140 , 
+    label: 'Severity'
+  } ]
+  @UI.selectionField: [ {
+    position: 140 
+  } ]
+  Severity;
+  
+  @EndUserText.label: 'ResolutionStatus'
+  @UI.identification: [ {
+    position: 150 , 
+    label: 'ResolutionStatus'
+  } ]
+  @UI.lineItem: [ {
+    position: 150 , 
+    label: 'ResolutionStatus'
+  } ]
+  @UI.selectionField: [ {
+    position: 150 
+  } ]
+  ResolutionStatus;
+  
+  @UI.identification: [ {
+    position: 160 
+  } ]
+  @UI.lineItem: [ {
+    position: 160 
+  } ]
+  @UI.selectionField: [ {
+    position: 160 
+  } ]
+  ResolvedBy;
+  
+  @EndUserText.label: 'ResolvedAt'
+  @UI.identification: [ {
+    position: 170 , 
+    label: 'ResolvedAt'
+  } ]
+  @UI.lineItem: [ {
+    position: 170 , 
+    label: 'ResolvedAt'
+  } ]
+  @UI.selectionField: [ {
+    position: 170 
+  } ]
+  ResolvedAt;
+}

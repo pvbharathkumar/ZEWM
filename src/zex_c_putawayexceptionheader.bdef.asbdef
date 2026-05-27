@@ -1,0 +1,29 @@
+projection;
+strict ( 2 );
+
+define behavior for ZEX_C_PUTAWAYEXCEPTIONHEADER //alias <alias_name>
+{
+  use create;
+  use update;
+  use delete;
+
+  use association _PutawayExceptionItem { create; }
+}
+
+define behavior for ZEX_C_PUTAWAYEXCEPTIONITEM //alias <alias_name>
+{
+  use update;
+  use delete;
+
+  use association _PutawayExceptionHeader;
+  use association _BinReassignmentHistory { create; }
+}
+
+define behavior for ZEX_C_BINREASSIGNMENTHISTORY //alias <alias_name>
+{
+  use update;
+  use delete;
+
+  use association _PutawayExceptionHeader;
+  use association _PutawayExceptionItem;
+}

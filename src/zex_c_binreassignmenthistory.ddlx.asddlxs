@@ -1,0 +1,151 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'ExceptionID'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'ExceptionID'
+annotate view ZEX_C_BINREASSIGNMENTHISTORY with
+{
+  @EndUserText.label: 'UUID'
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'UUID'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    label: 'UUID'
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  UUID;
+  
+  @EndUserText.label: 'ParentUUID'
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 20 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'ParentUUID'
+  } ]
+  @UI.lineItem: [ {
+    position: 20 , 
+    label: 'ParentUUID'
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  ParentUUID;
+  
+  @EndUserText.label: 'RootUUID'
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'RootUUID'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 , 
+    label: 'RootUUID'
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  RootUUID;
+  
+  @EndUserText.label: 'ExceptionID'
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'ExceptionID'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 , 
+    label: 'ExceptionID'
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  ExceptionID;
+  
+  @EndUserText.label: 'ItemNo'
+  @UI.identification: [ {
+    position: 50 , 
+    label: 'ItemNo'
+  } ]
+  @UI.lineItem: [ {
+    position: 50 , 
+    label: 'ItemNo'
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  ItemNo;
+  
+  @EndUserText.label: 'OldBin'
+  @UI.identification: [ {
+    position: 60 , 
+    label: 'OldBin'
+  } ]
+  @UI.lineItem: [ {
+    position: 60 , 
+    label: 'OldBin'
+  } ]
+  @UI.selectionField: [ {
+    position: 60 
+  } ]
+  OldBin;
+  
+  @EndUserText.label: 'NewBin'
+  @UI.identification: [ {
+    position: 70 , 
+    label: 'NewBin'
+  } ]
+  @UI.lineItem: [ {
+    position: 70 , 
+    label: 'NewBin'
+  } ]
+  @UI.selectionField: [ {
+    position: 70 
+  } ]
+  NewBin;
+  
+  @EndUserText.label: 'ReasonCode'
+  @UI.identification: [ {
+    position: 80 , 
+    label: 'ReasonCode'
+  } ]
+  @UI.lineItem: [ {
+    position: 80 , 
+    label: 'ReasonCode'
+  } ]
+  @UI.selectionField: [ {
+    position: 80 
+  } ]
+  ReasonCode;
+  
+  @UI.identification: [ {
+    position: 90 
+  } ]
+  @UI.lineItem: [ {
+    position: 90 
+  } ]
+  @UI.selectionField: [ {
+    position: 90 
+  } ]
+  ReassignedBy;
+  
+  @EndUserText.label: 'ReassignedAt'
+  @UI.identification: [ {
+    position: 100 , 
+    label: 'ReassignedAt'
+  } ]
+  @UI.lineItem: [ {
+    position: 100 , 
+    label: 'ReassignedAt'
+  } ]
+  @UI.selectionField: [ {
+    position: 100 
+  } ]
+  ReassignedAt;
+}

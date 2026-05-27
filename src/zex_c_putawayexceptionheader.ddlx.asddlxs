@@ -1,0 +1,278 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'ExceptionID'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'ExceptionID'
+annotate view ZEX_C_PUTAWAYEXCEPTIONHEADER with
+{
+  @EndUserText.label: 'UUID'
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'UUID'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    label: 'UUID'
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  UUID;
+  
+  @EndUserText.label: 'ExceptionID'
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 20 , 
+    type: #IDENTIFICATION_REFERENCE
+  }, 
+  {
+    label: 'PutawayExceptionItem Items', 
+    id: 'PutawayExceptionItemItems', 
+    purpose: #STANDARD, 
+    position: 21 , 
+    type: #LINEITEM_REFERENCE, 
+    targetElement: '_PutawayExceptionItem'
+  } ]
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'ExceptionID'
+  } ]
+  @UI.lineItem: [ {
+    position: 20 , 
+    label: 'ExceptionID'
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  ExceptionID;
+  
+  @EndUserText.label: 'WarehouseNo'
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'WarehouseNo'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 , 
+    label: 'WarehouseNo'
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  WarehouseNo;
+  
+  @EndUserText.label: 'InboundDelivery'
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'InboundDelivery'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 , 
+    label: 'InboundDelivery'
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  InboundDelivery;
+  
+  @UI.identification: [ {
+    position: 50 
+  } ]
+  @UI.lineItem: [ {
+    position: 50 
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  Supplier;
+  
+  @EndUserText.label: 'ExceptionType'
+  @UI.identification: [ {
+    position: 60 , 
+    label: 'ExceptionType'
+  } ]
+  @UI.lineItem: [ {
+    position: 60 , 
+    label: 'ExceptionType'
+  } ]
+  @UI.selectionField: [ {
+    position: 60 
+  } ]
+  ExceptionType;
+  
+  @EndUserText.label: 'Status'
+  @UI.identification: [ {
+    position: 70 , 
+    label: 'Status'
+  } ]
+  @UI.lineItem: [ {
+    position: 70 , 
+    label: 'Status'
+  } ]
+  @UI.selectionField: [ {
+    position: 70 
+  } ]
+  Status;
+  
+  @EndUserText.label: 'Priority'
+  @UI.identification: [ {
+    position: 80 , 
+    label: 'Priority'
+  } ]
+  @UI.lineItem: [ {
+    position: 80 , 
+    label: 'Priority'
+  } ]
+  @UI.selectionField: [ {
+    position: 80 
+  } ]
+  Priority;
+  
+  @UI.identification: [ {
+    position: 90 
+  } ]
+  @UI.lineItem: [ {
+    position: 90 
+  } ]
+  @UI.selectionField: [ {
+    position: 90 
+  } ]
+  AssignedSupervisor;
+  
+  @UI.identification: [ {
+    position: 100 
+  } ]
+  @UI.lineItem: [ {
+    position: 100 
+  } ]
+  @UI.selectionField: [ {
+    position: 100 
+  } ]
+  ExpectedPutawayDt;
+  
+  @UI.identification: [ {
+    position: 110 
+  } ]
+  @UI.lineItem: [ {
+    position: 110 
+  } ]
+  @UI.selectionField: [ {
+    position: 110 
+  } ]
+  ActualPutawayDt;
+  
+  @EndUserText.label: 'EscalationFlag'
+  @UI.identification: [ {
+    position: 120 , 
+    label: 'EscalationFlag'
+  } ]
+  @UI.lineItem: [ {
+    position: 120 , 
+    label: 'EscalationFlag'
+  } ]
+  @UI.selectionField: [ {
+    position: 120 
+  } ]
+  EscalationFlag;
+  
+  @EndUserText.label: 'Comments'
+  @UI.identification: [ {
+    position: 130 , 
+    label: 'Comments'
+  } ]
+  @UI.lineItem: [ {
+    position: 130 , 
+    label: 'Comments'
+  } ]
+  @UI.selectionField: [ {
+    position: 130 
+  } ]
+  Comments;
+  
+  @EndUserText.label: 'TotalItems'
+  @UI.identification: [ {
+    position: 140 , 
+    label: 'TotalItems'
+  } ]
+  @UI.lineItem: [ {
+    position: 140 , 
+    label: 'TotalItems'
+  } ]
+  @UI.selectionField: [ {
+    position: 140 
+  } ]
+  @UI.hidden: true
+  TotalItems;
+  
+  @EndUserText.label: 'TotalQty'
+  @UI.identification: [ {
+    position: 150 , 
+    label: 'TotalQty'
+  } ]
+  @UI.lineItem: [ {
+    position: 150 , 
+    label: 'TotalQty'
+  } ]
+  @UI.selectionField: [ {
+    position: 150 
+  } ]
+  TotalQty;
+  
+  @UI.identification: [ {
+    position: 160 
+  } ]
+  @UI.lineItem: [ {
+    position: 160 
+  } ]
+  @UI.selectionField: [ {
+    position: 160 
+  } ]
+  LocalCreatedBy;
+  
+  @UI.identification: [ {
+    position: 170 
+  } ]
+  @UI.lineItem: [ {
+    position: 170 
+  } ]
+  @UI.selectionField: [ {
+    position: 170 
+  } ]
+  LocalCreatedAt;
+  
+  @UI.identification: [ {
+    position: 180 
+  } ]
+  @UI.lineItem: [ {
+    position: 180 
+  } ]
+  @UI.selectionField: [ {
+    position: 180 
+  } ]
+  LocalLastChangedBy;
+  
+  @UI.identification: [ {
+    position: 190 
+  } ]
+  @UI.lineItem: [ {
+    position: 190 
+  } ]
+  @UI.selectionField: [ {
+    position: 190 
+  } ]
+  @UI.hidden: true
+  LocalLastChangedAt;
+  
+  @UI.identification: [ {
+    position: 200 
+  } ]
+  @UI.lineItem: [ {
+    position: 200 
+  } ]
+  @UI.selectionField: [ {
+    position: 200 
+  } ]
+  @UI.hidden: true
+  LastChangedAt;
+}

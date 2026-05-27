@@ -1,0 +1,36 @@
+projection implementation in class ZBP_C_EX_R_PTWYEXCEPTIONHEADER unique;
+strict ( 2 );
+extensible;
+use side effects;
+define behavior for ZC_EX_R_BINREASSIGNMENTHISTORY alias ZcExRBinreassignmenthistory
+extensible
+{
+  use update;
+  use delete;
+
+  use association _PUTAWAYEXCEPTIONHEADER;
+  use association _PUTAWAYEXCEPTIONITEM;
+
+}
+
+define behavior for ZC_EX_R_PUTAWAYEXCEPTIONHEADER alias ZcExRPutawayexceptionheader
+extensible
+{
+  use create;
+  use update;
+  use delete;
+
+  use association _PUTAWAYEXCEPTIONITEM { create; }
+
+}
+
+define behavior for ZC_EX_R_PUTAWAYEXCEPTIONITEM alias ZcExRPutawayexceptionitem
+extensible
+{
+  use update;
+  use delete;
+
+  use association _BINREASSIGNMENTHISTORY { create; }
+  use association _PUTAWAYEXCEPTIONHEADER;
+
+}
